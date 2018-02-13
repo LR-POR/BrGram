@@ -20,9 +20,12 @@ https://github.com/LFG-PTBR/BrGram/fst
 
 The finite-state transducers must be compiled with XFST in the operating system where you are running XLE. Edit the respective path in the morphology.lfg file to point to the location of each transducer file in your system.
 
-Once you have XLE installed and the transducers compiled, you can compile a parser from the grammar and apply it on individual sentences from the testfile.lfg in the test folder by executing the following commands on the XLE shell (I assume your working directory is the grammar folder):
+Once you have XLE installed and the transducers compiled, you can compile a parser from the grammar by executing the following command on the XLE shell (I assume your working directory is the grammar folder):
 
 create-parser config.lfg
+
+To apply the parser on individual sentences from the testfile.lfg in the test folder, run:
+
 parse-testfile test/testfile.lfg 1
 
 where 1 refers to first sentence in the testfile.
