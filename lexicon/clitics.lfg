@@ -1,0 +1,46 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"Clitics"
+
+me	  CL * (^ PRED) = 'pro'
+	 (^ PERS)=1
+	  (^ NUM)=sg.
+
+lhe 	  CL * (^ PRED) = 'pro'
+	       (^ PERS)=3
+	       (^ NUM)=sg
+	       (^ PRON-TYPE)=pers
+	       (^ CASE)=dat
+	       (^ NTYPE NSYN)=pronoun.
+
+te 	  CL * (^ PRED) = 'pro'
+	       (^ PERS)=2
+	       (^ NUM)=sg.
+
+se 	  CL * (^ PRED) = 'pro'
+	       (^ PERS)=3
+	       (^ PRON-TYPE)=refl
+	       { (^ CASE)=dat | (^ CASE)=acc}
+	       (^ NTYPE NSYN)=pronoun; "TODO: include these features in the other entries for pronouns"
+ C * (^ COMP-FORM)=se
+     (^ CLAUSE-TYPE)=int.
+
+si` mesmo D * "(^ PRED) = 'pro'"
+	      (^ PERS)=3
+	      (^ NUM)=sg
+	      (^ GEND)=masc
+	      (^ PRON-TYPE)=refl
+	      (^ PRON-FORM)=%stem "added 10.7.13" "TODO: check if other pronouns have this feature"
+	      (^ CASE)=obl
+	      (^ NTYPE NSYN)=pronoun.
+
+nos 	  CL * (^ PRED) = 'pro'
+	       (^ PERS)=1
+	       (^ NUM)=pl.
+
+vos 	  CL * (^ PRED) = 'pro'
+	       (^ PERS)=2
+	       (^ NUM)=pl.
+
+
+----

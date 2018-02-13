@@ -1,0 +1,242 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"======================================="
+"Personal pronouns as determiners (cf. Raposo 1998:73)"
+
+eu 	  D * "(^ PRED)='pro'" "PRED feature is provided by c-structure rule when there is no NP complement in the DP (as a complement to D or Num)"
+	      @(AGR sg 1)
+	      (^ HUMAN)=+
+	      (^ CASE)=nom "TODO: specify this feature for the other pronouns"
+	      (^ PRON-TYPE)=pers
+	      (^ PRON-FORM)=%stem
+	      (^ NTYPE NSYN)=pronoun
+	      @(GL I). "this prevents grammar from recognizing sentences in which D takes a NP complement."
+	      
+
+tu 	  D * "(^ PRED)='pro'"
+	      @(AGR sg 2)
+	      (^ PRON-TYPE)=pers
+	      (^ HUMAN)=+
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-TYPE)=pers
+	      (^ PRON-FORM)=%stem
+	      @(GL you).
+
+ele 	  D * "(^ PRED)='pro'"
+	      @(AGR sg 3)
+	      (^ GEND)=masc
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-TYPE)=pers
+	      (^ PRON-FORM)=%stem
+	      @(GL he).
+
+eles 	  D * "(^ PRED)='pro'"
+	      @(AGR pl 3)
+	      (^ GEND)=masc
+	      (^ PRON-TYPE)=pers
+	      (^ PRON-FORM)=%stem
+	      (^ NTYPE NSYN)=pronoun
+	      @(GL they).
+
+ela 	  D * "(^ PRED)='pro'"
+	      @(AGR sg 3)
+	      (^ GEND)=fem
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-TYPE)=pers
+	      (^ PRON-FORM)=%stem
+	      @(GL she).
+
+elas 	  D * "(^ PRED)='pro'"
+	      @(AGR pl 3)
+	      (^ GEND)=fem
+	      (^ PRON-TYPE)=pers
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-FORM)=%stem
+	      @(GL they).
+
+você 	  D * "(^ PRED)='pro'"
+	      @(AGR sg 3) "propose including PERS-SEM in analogy to GEND-SEM"
+	      (^ HUMAN)=+
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-TYPE)=pers
+	      (^ PRON-FORM)=%stem
+	      @(GL you).
+
+vocês 	  D * "(^ PRED)='pro'"
+	      @(AGR pl 3)
+	      (^ HUMAN)=+
+	      (^ PRON-TYPE)=pers
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-FORM)=%stem
+	      @(GL you).
+
+
+nós 	  D * "(^ PRED)='pro'" "with a PRED-feature, pronouns cannot occur pre-nominally;"
+	      "the notation above would produce a conflicting heads error"
+	      @(AGR pl 1)
+	      (^ HUMAN)=+
+	      (^ PRON-TYPE)=pers
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-FORM)=%stem
+	      @(GL we).
+
+vós 	  D * "(^ PRED)='pro'"
+	      @(AGR pl 2)
+	      (^ HUMAN)=+
+	      (^ NTYPE NSYN)=pronoun
+	      (^ PRON-FORM)=%stem
+	      (^ PRON-TYPE)=pers
+	      (^ PRON-FORM)=%stem
+	      @(GL you).
+
+"reciprocal pronouns"
+
+o` outro  D * "(^ PRED) = 'pro'"
+	      (^ NTYPE NSYN) = pronoun
+	      (^ PRON-FORM) = o` outro
+	      (^ PRON-TYPE) = recip 
+	      @(AGR sg 3)
+	      (^ GEND) = masc
+	      @(GL each` other).
+
+"interrogative pronouns"
+
+o` que 	  D * "{ (^ CLAUSE-TYPE)=int | (^ CLAUSE-TYPE)=decl }"
+	      "(^ PRED)='pro'" "TODO: activate PRED feature"
+	      @(AGR sg 3)
+	      (^ PRON-TYPE)=int
+	      (^ PRON-FORM)=%stem
+	      (^ NTYPE NSYN)=pronoun
+	      @(GL what).
+
+quem 	  D * "{ (^ CLAUSE-TYPE)=int | (^ CLAUSE-TYPE)=decl }"
+	      "(^ PRED)='pro'" "TODO: check PRED feature for other Ds or in DP rules"
+	      @(AGR sg 3)
+	      { (^ PRON-TYPE)=int | (^ PRON-TYPE)=free}
+	      (^ PRON-FORM)=%stem
+	      (^ NTYPE NSYN)=pronoun
+	      (^ HUMAN)=+
+	      @(GL who).
+
+"========================================"
+"articles"
+
+a 	  D * (^ GEND)=fem 
+		(^ NUM)=sg
+		(^ PERS)=3 
+		(^ SPEC DET DET-TYPE)=def 
+		(^ SPEC DET PRED)='o';
+	  P * (^ PFORM)=a
+	      (^ PTYPE)=nosem
+	      (^ CASE)=obl;
+	  C * (^ COMP-FORM)=a. 
+
+as 	  D * (^ GEND)=fem
+	      (^ NUM)=pl 
+	      (^ PERS)=3
+	      (^ SPEC DET PRED)='o'
+	      (^ SPEC DET DET-TYPE)=def. "TODO: include PRED feature (ParGram) like German Grammar?"
+
+o 	  D * (^ GEND)=masc
+	      (^ NUM)=sg
+	      (^ PERS)=3
+	      (^ SPEC DET DET-TYPE)=def
+	      (^ SPEC DET PRED)='o'.
+
+os 	  D * (^ GEND)=masc
+	      (^ NUM)=pl
+	      (^ PERS)=3
+	      (^ SPEC DET PRED)='o'
+	      (^ SPEC DET DET-TYPE)=def.
+
+este 	  D * (^ GEND)=masc
+	      (^ NUM)=sg
+	      (^ PERS)=3
+	      (^ SPEC DET PRED)='este'
+	      (^ SPEC DET DET-TYPE)=demon
+	      (^ SPEC DET DEIXIS)=proximal.
+
+um 	  D * (^ GEND)=masc
+	      (^ NUM)=sg
+	      (^ PERS)=3
+	      (^ SPEC DET PRED)='um'
+	      (^ SPEC DET DET-TYPE)=indef;
+	  UM * (^ GEND)=masc
+	       (^ NUM)=sg
+	       (^ PERS)=3
+	       (^ PRON-TYPE)=c recip.
+
+uma 	  D * (^ GEND)=fem
+	      (^ NUM)=sg
+	      (^ PERS)=3
+	      (^ SPEC DET PRED)='um'
+	      (^ SPEC DET DET-TYPE)=indef.
+
+"============================================"
+"Quantifiers"
+
+todos 	  Q * @(N-AGR masc pl)
+	      "(^ PRON-TYPE)=quant" "this feature causes a clash with the PRON-TYPE feature of determiners, etc."
+	      (^ SPEC QUANT QUANT-TYPE)=universal
+	      (^ SPEC QUANT PRED)='todo'.
+
+todas 	  Q * @(N-AGR fem pl)
+	      "(^ PRON-TYPE)=quant"
+	      (^ SPEC QUANT QUANT-TYPE)=universal
+	      (^ SPEC QUANT PRED)='todo'.
+
+algumas 	  Q * @(N-AGR fem pl)
+	      "(^ PRON-TYPE)=quant"
+	      (^ SPEC QUANT PRED)='algum'.
+
+"============================================"
+"Numerals"
+
+três 	  Num * (^ NUM)=c pl
+		(^ SPEC NUMBER NUMBER-TYPE)=card.
+
+5 	  Num * (^ NUM)=c pl
+		(^ SPEC NUMBER NUMBER-TYPE)=card.
+
+"============================================"
+
+
+"Possessives"
+
+nossa 	  Poss * @(N-AGR fem sg)
+		 (^ SPEC POSS SIGMA PERS)=1 "check this"
+		 (^ SPEC POSS SIGMA NUM)=pl
+		 (^ SPEC POSS PRON-TYPE)=poss "check this"
+		 (^ SPEC POSS GLOSS TRANS)=our. 
+
+sua 	  Poss * @(N-AGR fem sg)
+		 (^ SPEC POSS PRED)='pro'
+		 (^ SPEC POSS PERS)=3 
+		 (^ SPEC POSS PRON-TYPE)=poss
+		 (^ SPEC POSS PRON-FORM)= seu. 
+
+seu 	  Poss * @(N-AGR masc sg)
+		 (^ SPEC POSS PRED)='pro'
+		 (^ SPEC POSS PERS)=3 
+		 (^ SPEC POSS PRON-TYPE)=poss
+		 (^ SPEC POSS PRON-FORM)= %stem.
+
+meu 	  Poss * @(N-AGR masc sg)
+		 (^ PERS)=3 "TODO: to avoid ambiguity with verb forms like 'tinha'; implement this feature in all forms"
+		 (^ SPEC POSS PRED)='pro'
+		 (^ SPEC POSS PERS)=1 
+		 (^ SPEC POSS NUM)=sg
+		 (^ SPEC POSS PRON-TYPE)=poss
+		 (^ SPEC POSS PRON-FORM)= %stem
+		 (^ SPEC POSS GLOSS TRANS)=my.
+
+minha 	  Poss * @(N-AGR fem sg)
+		 (^ SPEC POSS PRED)='pro'
+		 (^ SPEC POSS PERS)=1 
+		 (^ SPEC POSS NUM)=sg
+		 (^ SPEC POSS PRON-TYPE)=poss
+		 (^ SPEC POSS PRON-FORM)= meu
+		 (^ SPEC POSS GLOSS TRANS)=my.
+
+
+----

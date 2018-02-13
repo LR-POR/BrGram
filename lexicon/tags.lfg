@@ -1,0 +1,59 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+-unknown  N XLE (^ PRED)='%stem'; A XLE @(A-SUBJ-COMPAR %stem).
+
+-token 	  TOKEN * (^ TOKEN)=%stem.
+
++F 	  N_SFX XLE (^ GEND)=fem; A_SFX XLE (^ SUBJ GEND)=fem.
+
++M 	  N_SFX XLE (^ GEND)=masc; A_SFX XLE (^ SUBJ GEND)=masc.
+
++Sg 	  N_SFX XLE (^ NUM)=sg; A_SFX XLE (^ SUBJ NUM)=sg; V_SFX XLE (^ SUBJ NUM)=sg.
+
++Pl 	  N_SFX XLE (^ NUM)=pl; A_SFX XLE (^ SUBJ NUM)=pl; V_SFX XLE (^ SUBJ NUM)=pl.
+  
++Aug 	  N_SFX XLE (^ SPEC QUANT DEGREE)=augmentative; A_SFX XLE (^ SPEC QUANT DEGREE)=augmentative.
+
++Dim 	  N_SFX XLE (^ SPEC QUANT DEGREE)=diminutive; A_SFX XLE (^ SPEC QUANT DEGREE)=diminutive.
+
++Super 	  N_SFX XLE (^ SPEC QUANT DEGREE)=superlative; A_SFX XLE (^ SPEC QUANT DEGREE)=superlative.
+
++N 	  N_SFX XLE (^ NTYPE NSYN)=common.
+
++NPR 	  N_SFX XLE (^ NTYPE NSYN)=proper.
+
++Adj 	  A_SFX XLE.
+
++Ptcp 	  V_SFX XLE @PSTPT. 
+
++V 	  V_SFX XLE.
+
++Grd 	  V_SFX XLE @GERUND.
+
++PrsInd   V_SFX XLE @VPRES @IND @ACT @MAIN.
+
++ImpfInd  V_SFX XLE @VIMPERF @IND @ACT @MAIN.
+
++PerfInd  V_SFX XLE @VPERF @IND @ACT @MAIN.
+
+"+FutInd"
+
+"+PstPrf"
+
+"+PrsSbjv 
+
++ImpfSbjv 
+
++FutSbjv "
+
++Imp V_SFX XLE @IMP.
+
+"+FutPret"
+
++1 V_SFX XLE (^ SUBJ PERS)=1.
+
++2 V_SFX XLE (^ SUBJ PERS)=2.
+
++3 V_SFX XLE (^ SUBJ PERS)=3.
+
+----

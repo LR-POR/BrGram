@@ -1,0 +1,15 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"Complementizers"
+que 	  C * (^ COMP-FORM)=que
+	      (^ CLAUSE-TYPE)=decl;
+	  D * (^ PRON-TYPE)=rel
+	      (^ PRON-FORM)= que
+	      (^ NTYPE NSYN)=pronoun;
+	  P * (^ PFORM)=%stem
+	      (^ PTYPE)=nosem
+	      (^ CASE)=nom. "TODO: if CASE is nom, is this really a preposition?"
+
+
+
+----

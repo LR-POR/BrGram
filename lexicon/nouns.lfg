@@ -1,0 +1,523 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"Nouns"
+ceará N * @(PROPER Ceará location)
+				@N-HUM
+				@(N-AGR masc sg).
+
+sergipe N * @(PROPER Sergipe location)
+				@N-HUM
+				@(N-AGR masc sg).
+
+pernambuco N * @(PROPER Pernambuco location)
+				@N-HUM
+				@(N-AGR masc sg).
+
+jequié N * @(PROPER Jequié location)
+				@N-HUM
+				@(N-AGR fem sg).
+
+secretaria` de` defesa N * @(PROPER Secretaria` de` Defesa organization)
+			   @HUM
+			   @(N-AGR fem sg).
+
+secretaria` de` segurança N * @(PROPER Secretaria` de` Segurança organization)
+			   @HUM
+			   @(N-AGR fem sg).
+
+ministério` de` o` turismo N * @(PROPER Ministério` do` Turismo organization)
+			   @HUM
+			   @(N-AGR masc sg).
+
+joana   N * @(PROPER Joana name)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL Joana).
+
+sonia` braga  N * @(PROPER Sonia` Braga name)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL Sonia` Braga).
+
+
+valdir N * @(PROPER Valdir name)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL Valdir).
+
+gaúcho N * @(PROPER Gaúcho name)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL Gaúcho).
+
+polícia   N * @(PROPER polícia organization)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL police).
+
+universidade N * @(PROPER universidade organization)
+		 @HUM
+		 @(N-AGR fem sg)
+		 @(GL university).
+
+polícia` militar N * @(PROPER Polícia` Militar organization)
+		     @HUM
+		     @(N-AGR fem sg)
+		     @(GL Military` Police).
+
+
+"polícia` militar` de` o` ceará N * @(PROPER Polícia` Militar` do` Ceará organization)
+				@HUM
+				@(N-AGR fem sg)."
+
+ladrão 	  N * @(COMMON ladrão)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL thief).
+
+ladrões   N * @(COMMON ladrão)
+	      @HUM
+	      @(N-AGR masc pl)
+	      @(GL thief).
+
+torcedores N * @(COMMON torcedor)
+	      @HUM
+	      @(N-AGR masc pl)
+	      @(GL soccer` fan).
+
+prefeito  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL mayor).
+
+flanelinha N * @(COMMON %stem)
+	       @HUM
+	       @(N-AGR masc sg)
+	       @(GL squeegee).
+
+agrônomos   N * @(COMMON agrônomo)
+	      @HUM
+	      @(N-AGR masc pl)
+	      @(GL agronomist).
+
+manifestante N * @(COMMON %stem)
+		 @HUM
+		 @(N-AGR masc sg)
+		 @(GL protester).
+
+manifestantes N * @(COMMON manifestante)
+		  @HUM
+		  @(N-AGR masc pl)
+		  @(GL protester).
+
+crítico N * @(COMMON %stem)
+		 @HUM
+		 @(N-AGR masc sg)
+		 @(GL critic).
+
+greve 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL strike).
+
+atuação   N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL performance).
+
+protesto  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL protest).
+
+filme  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL film).
+
+segunda-feira N * @(COMMON %stem)
+		  @N-HUM
+		  @(N-AGR fem sg)
+		  @(GL monday).
+
+reunião 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL meeting).
+
+new` york N * (^ PRED)='New` York'.
+
+old` new` york N * (^ PRED)='Old` New` York'.
+
+são` joão` meriti N * (^ PRED)='São` João` Meriti'.
+
+são` josé` meriti N * (^ PRED)='São` José` Meriti'.
+
+são` josé` de` meriti N * (^ PRED)='São` José` de` Meriti'.
+
+esquilo   N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL gopher).
+
+cachorro  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL dog).
+
+bolhas 	  N * @(COMMON bolha)
+	      @N-HUM
+	      @(N-AGR fem pl)
+	      @(GL globs).
+
+vísceras  N * @(COMMON víscera)
+	      @N-HUM
+	      @(N-AGR fem pl)
+	      @(GL guts).
+
+amanhecer N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL dawn).
+
+rio 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL river).
+
+trator 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL tractor).
+
+tratores  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc pl)
+	      @(GL tractor).
+
+solavanco N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL shudder).
+
+problema  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL problem).
+
+botão 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL button).
+
+livro 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL book).
+
+vidro 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL glass).
+
+vidros 	  N * @(COMMON vidro)
+	      @N-HUM
+	      @(N-AGR masc pl)
+	      @(GL glass).
+
+vinho 	  N * @(MASS %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL wine).
+
+cabelo 	  N * @(MASS %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL hair).
+
+chá 	  N * @(MASS %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL tea).
+
+carne 	  N * @(MASS %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL meat).
+
+dinheiro  N * @(MASS %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL money).
+
+casca 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL peel).
+
+laranja   N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL orange).
+
+laranjas   N * @(COMMON laranja)
+	      @N-HUM
+	      @(N-AGR fem pl)
+	      @(GL orange).
+
+banana 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL banana).
+
+bananas   N * @(COMMON banana)
+	      @N-HUM
+	      @(N-AGR fem pl)
+	      @(GL banana).
+
+parede   N * @(COMMON parede)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL wall).
+
+paredes   N * @(COMMON parede)
+	      @N-HUM
+	      @(N-AGR fem pl)
+	      @(GL wall).
+
+sorvete   N * @(MASS %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL ice-cream).
+
+condado   N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL county).
+
+carro 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL car).
+
+quiosque  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL kiosk).
+
+banco 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL bank).
+
+veículo   N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL vehicle).
+
+veículos   N * @(COMMON veículo)
+	      @N-HUM
+	      @(N-AGR masc pl)
+	      @(GL vehicle).
+
+banheiro  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR masc sg)
+	      @(GL bathroom).
+
+árvore 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL tree).
+
+aquisição N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL purchase).
+
+proposta N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL proposal).
+
+ebay 	  N * @(PROPER eBay organization)
+	      @HUM
+	      @(N-AGR masc sg). "TODO: handle proper capitalization in the tokenizer, i.e. eBay"
+
+"ebay 	  N * @(PROPER %stem organization)
+	      @HUM
+	      @(N-AGR masc sg)."
+
+capa 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL cover).
+
+garrafa   N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL bottle).
+
+loja 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL store).
+
+casa 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL house).
+
+mala 	  N * @(COMMON %stem)
+	      @N-HUM
+	      @(N-AGR fem sg)
+	      @(GL luggage).
+
+sorte 	  N * @(MASS %stem)
+	      @(N-AGR fem sg)
+	      @(GL luck).
+
+motorista N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL driver).
+
+amantes   N * @(COMMON amante)
+	      @HUM
+	      @(N-AGR masc pl)
+	      @(GL lovers).
+
+marido 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL husband).
+
+filmmaker N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL %stem).
+
+agricultor N * @(COMMON %stem)
+	       @HUM
+	       @(N-AGR masc sg)
+	       @(GL farmer).
+
+agricultores N * @(COMMON %stem)
+	       @HUM
+	       @(N-AGR masc pl)
+	       @(GL farmer).
+
+homem 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL man).
+
+agricultora N * @(COMMON %stem)
+		@HUM
+		@(N-AGR fem sg)
+		@(GL farmer).
+
+pessoa 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL person).
+
+mulher 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL woman).
+
+mulheres  N * @(COMMON mulher)
+	      @HUM
+	      @(N-AGR fem pl)
+	      @(GL woman).
+
+rapaz 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL boy).
+
+vizinho   N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL neighbour).
+
+vizinhos  N * @(COMMON vizinho)
+	      @HUM
+	      @(N-AGR masc pl)
+	      @(GL neighbours).
+
+criança   N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL child).
+
+crianças  N * @(COMMON criança)
+	      @HUM
+	      @(N-AGR fem pl)
+	      @(GL children).
+
+filha 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL daughter).
+
+filho 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL son).
+
+professora N * @(COMMON %stem)
+	       @HUM
+	       @(N-AGR fem sg)
+	       @(GL teacher).
+
+professor N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR masc sg)
+	      @(GL teacher).
+
+irmã 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL sister).
+
+irmãos 	  N * @(COMMON irmão)
+	      @HUM
+	      @(N-AGR masc pl)
+	      @(GL brothers).
+
+esposa 	  N * @(COMMON %stem)
+	      @HUM
+	      @(N-AGR fem sg)
+	      @(GL wife).
+
+
+-unknown N XLE (^ PRED)='%stem'; A XLE @(A-SUBJ-COMPAR %stem).
+
+-token  TOKEN * (^ TOKEN)=%stem.
+
++F N_SFX XLE (^ GEND)=fem; A_SFX XLE (^ SUBJ GEND)=fem.
+
++M N_SFX XLE (^ GEND)=masc; A_SFX XLE (^ SUBJ GEND)=masc.
+
++Sg N_SFX XLE (^ NUM)=sg; A_SFX XLE (^ SUBJ NUM)=sg; V_SFX XLE (^ SUBJ NUM)=sg.
+
++Pl N_SFX XLE (^ NUM)=pl; A_SFX XLE (^ SUBJ NUM)=pl; V_SFX XLE (^ SUBJ NUM)=pl.
+  
++Aug N_SFX XLE (^ SPEC QUANT DEGREE)=augmentative; A_SFX XLE (^ SPEC QUANT DEGREE)=augmentative.
+
++Dim N_SFX XLE (^ SPEC QUANT DEGREE)=diminutive; A_SFX XLE (^ SPEC QUANT DEGREE)=diminutive.
+
++Super N_SFX XLE (^ SPEC QUANT DEGREE)=superlative; A_SFX XLE (^ SPEC QUANT DEGREE)=superlative.
+
++N N_SFX XLE (^ NTYPE NSYN)=common.
+
++NPR N_SFX XLE (^ NTYPE NSYN)=proper.
+
++Adj A_SFX XLE.
+
++Ptcp V_SFX XLE @PAST-PTCP. 
+
+
+----

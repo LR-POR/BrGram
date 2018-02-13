@@ -1,0 +1,227 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"Adjectives"
+
+militar  A * @(A-SUBJ militar)
+	      @(A-AGR fem sg)
+	      @(GL military).
+
+federal  A * @(A-SUBJ federal)
+	      @(A-AGR fem sg)
+	      @(GL federal).
+
+oportunistas   A * @(A-SUBJ-COMPAR oportunista)
+	      @(A-AGR masc pl)
+	      @(GL oportunistic).
+
+outro 	  A * @(A-SUBJ %stem)
+	      @(A-AGR masc sg)
+	      @(GL other)";
+	      N * (^ PRED) = 'pro'
+	      (^ NTYPE NSYN) = pronoun
+	      (^ PRON-FORM) = outro
+	      (^ PRON-TYPE) = recip 
+	      @(N-AGR masc sg)".
+
+
+tinto 	  A * @(A-SUBJ %stem)
+	      @(A-AGR masc sg)
+	      @(GL red).
+
+vermelho  A * @(A-SUBJ-COMPAR %stem)
+	      @(A-AGR masc sg)
+	      @(GL red).
+
+vermelha  A * @(A-SUBJ-COMPAR vermelho)
+	      @(A-AGR fem sg)
+	      @(GL red).
+
+imundas  A * @(A-SUBJ-COMPAR imunda)
+	      @(A-AGR fem pl)
+	      @(GL filthy).
+
+rápido 	  A * @(A-SUBJ-COMPAR %stem)
+	      @(A-AGR masc sg)
+	      @(GL fast).
+
+esportivo A * @(A-SUBJ-COMPAR %stem)
+	      @(A-AGR masc sg)
+	      @(GL sports).
+
+grande 	  A * @(A-SUBJ %stem)
+	      @(A-AGR fem sg)
+	      @(GL great). "TODO: include masc"
+
+grandes   A * @(A-SUBJ grande)
+	      @(A-AGR fem pl)
+	      @(GL big). "TODO: include masc"
+
+velho 	  A * @(A-SUBJ-COMPAR %stem)
+	      @(A-AGR masc sg)
+	      @(GL old).
+
+novo 	  A * @(A-SUBJ-COMPAR %stem)
+	      @(A-AGR masc sg)
+	      @(GL new).
+
+nova 	  A * @(A-SUBJ-COMPAR novo)
+	      @(A-AGR fem sg)
+	      @(GL new).
+
+felizes   A * @(A-SUBJ-COMPAR feliz)
+	      @(A-AGR fem pl)
+	      @(GL happy). "TODO: include masc"
+
+verdes 	  A * @(A-SUBJ-COMPAR verde)
+	      @(A-AGR fem pl)
+	      @(GL green). "TODO: include masc"
+
+cinzentas A * @(A-SUBJ-COMPAR cinzenta)
+	      @(A-AGR fem pl)
+	      @(GL grimy). 
+
+gordurosas A * @(A-SUBJ-COMPAR gorduroso)
+	       @(A-AGR fem pl)
+	       @(GL greasy). 
+
+orgulhosos A * @(A-SUBJ-OBL-COMPAR orgulhoso de)
+	       @(A-AGR masc pl)
+	       @(GL proud).
+
+"Passive and past participles"
+
+"TODO: unify analysis"
+"quebrada  Ptcp * { @(PART quebrar) | @(A-SUBJ-COMPAR quebrar)} 
+	      @(A-AGR fem sg)
+	      @(GL broken)."
+
+descascada A * @(PART descascar)
+	      @(A-AGR fem sg)
+	      @(GL peel).
+
+descascadas A * @(PART descascar)
+	      @(A-AGR fem pl)
+	      @(GL peel).
+
+tirada 	  A * {@(PART-OBL tirar) | @(PART tirar) }
+	      @(A-AGR fem sg)
+	      @(GL remove).
+
+derrubado A * @(PART derrubar)
+	      @(A-AGR masc sg)
+	      @(GL cut` down); 
+	  V * @(TRNS derrubar)
+	      @PSTPT
+	      @(GL cut` down).
+
+derrubada A * @(PART derrubar)
+	      @(A-AGR fem sg)
+	      @(GL cut` down).
+
+derrubados A * @(PART derrubar)
+	       @(A-AGR masc pl)
+	       @(GL cut` down).
+
+derrubadas A * @(PART derrubar)
+	       @(A-AGR fem pl)
+	       @(GL cut` down).
+
+detonado A * @(PART detonar)
+	      @(A-AGR masc sg)
+	      @(GL cut` down); 
+	  V * @(TRNS detonar)
+	      @PSTPT
+	      @(GL destroy).
+
+detonados A * @(PART-2 detonar) "TODO: experimental feature; change this to PART"
+	       @(A-AGR masc pl)
+	       @(GL destroy).
+
+furtada   A * @(PART furtar)
+	      @(A-AGR fem sg)
+	      @(GL steal).
+
+furtado A * @(PART furtar)
+	      @(A-AGR masc sg)
+	      @(GL break); 
+	  V * @(TRNS furtar)
+	      @PSTPT
+	      @(GL steal).
+
+quebrado  A * @(PART quebrar)
+	      @(A-AGR masc sg)
+	      @(GL break); 
+	  V * @(TRNS quebrar)
+	      @PSTPT
+	      @ACT "TODO: include this feature in all past participles"
+	      @(GL break).
+
+quebrada A * @(PART quebrar)
+	      @(A-AGR fem sg)
+	      @(GL break).
+
+quebrados A * @(PART quebrar)
+	       @(A-AGR masc pl)
+	       @(GL break).
+
+quebradas A * @(PART quebrar)
+	       @(A-AGR fem pl)
+	       @(GL break).
+
+apertado A * @(PART apertar)
+	      @(A-AGR masc sg)
+	      @(GL press); 
+	  V * @(TRNS apertar)
+	      @PSTPT
+	      @(GL press).
+
+apertada A * @(PART apertar)
+	      @(A-AGR fem sg)
+	      @(GL press).
+
+apertados A * @(PART apertar)
+	       @(A-AGR masc pl)
+	       @(GL press).
+
+apertadas A * @(PART apertar)
+	       @(A-AGR fem pl)
+	       @(GL press).
+
+
+dado 	  A * @(DTRNS-PART dar)
+	      @(A-AGR masc sg)
+	      @(GL give); 
+	  V * @(DTRNS dar)
+	      @PSTPT
+	      @(GL give).
+
+dada 	  A * @(DTRNS-PART dar)
+	      @(A-AGR fem sg)
+	      @(GL give).
+
+dados 	  A * @(DTRNS-PART dar)
+	      @(A-AGR masc pl)
+	      @(GL give).
+
+dadas 	  A * @(DTRNS-PART dar)
+	      @(A-AGR fem pl)
+	      @(GL give).
+
+"
+cortado A * @(PART cortar)
+	      @(A-AGR masc sg)
+	      @(GL cut).
+
+cortada A * @(PART cortar)
+	      @(A-AGR fem sg)
+	      @(GL cut).
+
+cortados A * @(PART cortar)
+	       @(A-AGR masc pl)
+	       @(GL cut).
+
+cortadas A * @(PART cortar)
+	       @(A-AGR fem pl)
+	       @(GL cut).
+"
+----

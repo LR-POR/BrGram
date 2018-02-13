@@ -1,0 +1,34 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"Negative particles"
+
+não 	  Neg * (^ PRED)='%stem'
+		(^ ADJUNCT-TYPE)=neg
+		@(GL not).
+		
+"Adverbs"
+		
+ontem 	  Adv * (^ PRED)='%stem'
+		(^ ADV-TYPE)=temp
+		@(GL yesterday).
+
+aqui 	  Adv * (^ PRED)='%stem'
+		(^ ADV-TYPE)=loc
+		@(GL here).
+
+impunemente 	  Adv * (^ PRED)='%stem'
+		(^ ADV-TYPE)=manner
+		@(GL without` punishment).
+
+alto 	  Adv * (^ PRED)='%stem'
+		(^ ADV-TYPE)=manner
+		@(GL aloud). "ParGram?"
+
+mais 	  Adv * (^ PRED)='%stem'
+		(^ DEGREE) = {comparative superlative}
+		(^ DEG-DIM) = pos
+		(^ ADV-FORM) = mais
+		(^ ADV-TYPE)= degree
+		@(GL more). "cf. tur-45" "include {manner intensity}?"
+
+----

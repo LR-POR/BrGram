@@ -1,0 +1,9 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"punctuation"
+
+`. 	  PUNCT * @(IFF ~ (^ TNS-ASP MOOD)= imperative (^ CLAUSE-TYPE)= decl ).
+`? 	  PUNCT * (^ CLAUSE-TYPE) = int.
+
+
+----

@@ -1,0 +1,45 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+
+"Syntactic prepositions"
+
+"a 	  P * (^ PFORM)=a." "see entry for 'a' in the Determiners section"
+
+de 	  P * { (^ PFORM)=de
+		(^ PTYPE)=nosem
+		(^ CASE)=obl
+	       |
+		@(SEM-PREP de {poss purp source} ) "source not in ParGram list"
+	      };
+	  C * (^ COMP-FORM)=de.
+
+por 	  P * (^ PFORM)=por
+	      (^ PTYPE)=nosem
+	      (^ CASE)=obl. "ParGram: (^ PSEM)=ag German, PFORM English"
+
+
+de` o` que P * (^ PFORM)=que
+	      (^ PTYPE)=nosem
+	      (^ CASE)=nom. "TODO: if CASE is nom, is this really a preposition?"
+
+"============================================"
+"Semantic prepositions"
+
+dentro` de 	  P * (^ PRED)='dentro` de<(^ SUBJ)(^ OBJ)>'.
+
+em 	  P * @(SEM-PREP %stem {dir loc})
+	      @(GL in).
+
+durante 	  P * @(SEM-PREP %stem temp)
+	      @(GL during).
+
+até 	  P * @(SEM-PREP %stem {dir temp})
+	      @(GL until).
+
+com 	  P * @(SEM-PREP %stem {comit inst manner})
+	      @(GL with).
+
+"============================================"
+
+
+----

@@ -1,0 +1,853 @@
+PARGRAM PORTUGUESE LEXICON (1.0)
+
+"Verbs"
+"verbs from ParGramBank sentences"
+
+comprar   V * @(OPT-DTRNS %stem)
+	      "(^ VFORM)=infinitive"
+	      @INF
+	      @(GL buy).
+
+consertar V * @(TRNS %stem)
+	      @INF
+	      @(GL repair).
+
+invadir   V * @(TRNS %stem)
+	      @INF
+	      @(GL invade).
+
+terminarem V * @(TRNS terminar)
+	       @INF
+	       @V3PP
+	       @(GL end).
+
+tomar 	  V * @(TRNS %stem)
+	      @INF
+	      @(GL get). "check this"
+
+pegar 	  V * @(TRNS %stem)
+	      @INF
+	      @(GL get).
+
+limpar 	  V * @(TRNS %stem)
+	      @INF
+	      @(GL clean).
+
+sair 	  V * @(NTRNS %stem)
+	      @INF
+	      @(GL leave).
+
+chegar 	  V * @(NTRNS %stem)
+	      @INF
+	      @(GL arrive).
+
+aperte 	  V * @(TRNS apertar)
+	      (^ SUBJ PRED) = 'pro'
+	      (^ SUBJ NTYPE NSYM) = pronoun
+	      (^ SUBJ NUM) = sg
+	      (^ SUBJ PERS) = 3  "TODO: 2?"
+	      (^ SUBJ PRON-TYPE) = null
+	      (^ CLAUSE-TYPE) = imp
+	      (^ PASSIVE) = -
+	      (^ VTYPE) = main
+	      @IMP
+	      @(GL push).
+
+vamos 	  V * (^ PRED)='ir<(^ SUBJ)(^ XCOMP)>'
+	      (^ XCOMP SUBJ)=(^ SUBJ) 
+	      ~ (^ XCOMP COMP-FORM)
+	      (^ SUBJ PRED) = 'pro'
+	      (^ SUBJ NTYPE NSYM) = pronoun
+	      (^ SUBJ NUM) = pl
+	      (^ SUBJ PERS) = 1
+	      (^ SUBJ PRON-TYPE) = null
+	      (^ CLAUSE-TYPE) = imp
+	      (^ PASSIVE) = -
+	      (^ VTYPE) = main
+	      @IMP
+	      @(GL go).
+
+liga 	  V * @(CAUS-INCHO ligar)
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL start).
+
+ligou 	  V * @(CAUS-INCHO ligar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL start).
+
+acordou   V * @(CAUS-INCHO acordar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL wake).
+
+fechou 	  V * @(CAUS-INCHO fechar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL close).
+
+saiu 	  V * @(NTRNS sair)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL leave).
+
+agiram 	  V * @(NTRNS agir)
+	      @V3PP
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL act).
+
+quebrou   V * @(CAUS-INCHO quebrar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL break).
+
+viu 	  V * {@(TRNS ver) | @(TRNS-XCOMP ver)}
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL see).
+
+viram 	  V * {@(TRNS ver) | @(TRNS-XCOMP ver)}
+	      @V3PP
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL see).
+
+leu 	  V * { @(OPT-TRNS ler) | @(OBLIQ P) (^ OBL PFORM)=c para}
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL read).
+
+compraram V * @(OPT-DTRNS comprar)
+	      @V3PP
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL buy).
+
+detonaram V * @(TRNS detonar)
+	      @V3PP
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL destroy).
+
+dançaram  V * @(NTRNS dançar)
+	      @V3PP
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL dance).
+
+banhou 	  V * @(TRNS banhar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL bath).
+
+comprou   V * @(OPT-DTRNS comprar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL buy).
+
+bebia 	  V * @(OPT-DTRNS beber)
+	      @V3PS
+	      @VIMPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL drink).
+
+latia 	  V * @(NTRNS latir)
+	      @V3PS
+	      @VIMPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL bark).
+
+vendeu 	  V * @(TRNS vender)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL sell).
+
+mostrava  V * @(TRNS mostrar)
+	      @V3PS
+	      @VIMPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL show).
+
+admirava  V * @(TRNS admirar)
+	      @V3PS
+	      @VIMPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL admire).
+
+derrubou  V * @(TRNS derrubar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL cut` down).
+
+derrubando V * @(TRNS derrubar)
+	       @GERUND
+	       "(^ TNS-ASP PROG)= +_".
+
+descascando V * @(TRNS descascar)
+		@GERUND
+		@(GL peel).
+
+tirando   V * @(TRNS-OBL tirar)
+	      @GERUND
+	      @(GL remove).
+
+limpou 	  V * @(TRNS limpar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL clean).
+
+gemeu 	  V * @(NTRNS gemer)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL groan).
+
+apareceu  V * @(NTRNS aparecer)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL appear).
+
+dá 	  V * @(DTRNS dar)
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL give).
+
+deu 	  V * @(DTRNS dar)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL give).
+
+sabe 	  V * (^ PRED)='saber<(^ SUBJ)(^ COMP)>'
+	      (^ COMP MOOD)= indicative
+	      "(^ COMP COMP-FORM)= que"
+	      (^ COMP CLAUSE-TYPE)="c" decl
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL know).
+
+perguntou V * { (^ PRED)='perguntar<(^ SUBJ)(^ COMP)>' |
+		(^ PRED)='perguntar<(^ SUBJ)(^ OBJ-TH)(^ COMP)>'
+		(^ OBJ-TH CASE)=c dat}
+	      (^ COMP MOOD)= indicative
+	      "(^ COMP COMP-FORM)= se"
+	      (^ COMP CLAUSE-TYPE)=c int
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL ask).
+
+acredita  V * (^ PRED)='acreditar<(^ SUBJ)(^ COMP)>'
+	      (^ COMP MOOD)= indicative
+	      "(^ COMP COMP-FORM)= que"
+	      (^ COMP CLAUSE-TYPE)=c decl
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL believe).
+
+saiba 	  V * (^ PRED)='saber<(^ SUBJ)(^ COMP)>'
+	      (^ COMP MOOD)=c indicative
+	      "(^ COMP COMP-FORM)=c que"
+	      (^ COMP CLAUSE-TYPE)=c decl
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      (^ MOOD)=subjunctive
+	      @(GL know).
+
+"subject as non-subcategorized grammatical relation? TODO: implement this for other copula verbs?"
+
+
+é 	  V * @VERB-SER
+	      @V3PS
+	      @VPRES
+	      @COP
+	      @ACT
+	      @IND.
+
+foi 	  V * @VERB-SER
+	      @V3PS
+	      @VPERF
+	      @COP
+	      @ACT
+	      @IND.
+
+foram 	  V * @VERB-SER
+	      @V3PP
+	      @VPERF
+	      @COP
+	      @ACT
+	      @IND.
+
+sido 	  V * @VERB-SER
+	      @PSTPT
+	      "(^ TNS-ASP PERF)= +_"
+	      @ACT 
+	      @COP.
+
+sendo 	  V * @VERB-SER
+	      @GERUND
+	      "(^ TNS-ASP PERF)= +_"
+	      @ACT 
+	      @COP.
+
+
+são 	  V * @VERB-SER
+	      @V3PP
+	      @VPRES
+	      @COP
+	      @ACT
+	      @IND.
+
+"other verbs"
+passa 	  V * (^ PRED)='passa<(^ SUBJ)>'
+	      @V3PS
+	      @VPRES
+	      @IND.
+
+passam 	  V * (^ PRED)='passam<(^ SUBJ)>'
+	      @V3PP
+	      @VPRES
+	      @IND.
+
+passar 	  V * (^ PRED)='passar<(^ SUBJ)>'
+	      @INF.
+
+dança 	  V * (^ PRED)='dançar<(^ SUBJ)>'
+	      @V3PS
+	      @VPRES
+	      @IND.
+
+dançam 	  V * (^ PRED)='dançar<(^ SUBJ)>'
+	      @V3PP
+	      @VPRES
+	      @IND.
+
+dançar    V * (^ PRED)='dançar<(^ SUBJ)>'
+              @INF.
+
+"TODO: uniformize encoding of verb TER and VERB-TER template"
+tem 	  V * { (^ PRED)='ter<(^ OBJ)>(^ SUBJ)'
+		~ (^ SUBJ PRED)
+		(^ SUBJ PRON-TYPE)=expl_
+		(^ SUBJ PRON-FORM)=null "see Wolof 36"
+		(^ SUBJ NTYPE NSYN)=pronoun |
+		@VERB-TER}
+	      @(GL have) "TODO: uniformize glosses"
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND;
+	  I * @V3PS
+	      @VPRES
+	      @IND
+	      @PERF.
+
+tido 	  V * @VERB-TER
+	      @PSTPT
+	      @ACT. "TODO:check use of @ACT"
+
+tive 	  V * @VERB-TER
+	      @V1PS
+	      @VPERF
+	      @IND.
+
+teve 	  V * @VERB-TER
+	      @V3PS
+	      @VPERF
+	      @IND.
+
+tivemos   V * @VERB-TER
+	      @V1PP
+	      @VPERF
+	      @IND.
+
+tiveram   V * @VERB-TER
+	      @V3PP
+	      @VPERF
+	      @IND.
+
+chove 	  V * (^ PRED)='chover<>(^ SUBJ)'
+	      ~ (^ SUBJ PRED)
+	      (^ SUBJ PRON-TYPE)=expl_
+	      (^ SUBJ PRON-FORM)=null "see Wolof 36"
+	      (^ SUBJ NTYPE NSYN)=pronoun
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND.
+
+há 	  V * (^ PRED)='haver<(^ OBJ)>(^ SUBJ)'
+	      ~ (^ SUBJ PRED)
+	      (^ SUBJ PRON-TYPE)=expl_
+	      (^ SUBJ PRON-FORM)=null "see Wolof 36"
+	      (^ SUBJ NTYPE NSYN)=pronoun
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND.
+
+chovendo  V * (^ PRED)='chover<>(^ SUBJ)' "TODO: use this format for other impersonal verbs"
+	      "(^ SUBJ PRED)='pro'"
+	      ~ (^ SUBJ PRED)
+	      (^ SUBJ PRON-TYPE)=expl_
+	      (^ SUBJ PRON-FORM)=null "see Wolof 36"
+	      (^ SUBJ NTYPE NSYN)=pronoun
+	      "(^ TNS-ASP PROG)= +_"
+	      @GERUND
+	      @ACT
+	      @MAIN.
+
+estava 	  V * (^ PRED)='estar<(^ SUBJ)(^ XCOMP-PRED)>'
+	      "@(CAT (^ XCOMP) {AP PP})"
+	      (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	      (^ XCOMP-PRED ASPECT) = stative
+	      @V3PS
+	      @VIMPERF
+	      @ACT
+	      @COP
+	      @IND;
+	  I * @V3PS
+	      @VIMPERF
+	      @IND
+	      @PROG.
+
+estavam   V * (^ PRED)='estar<(^ SUBJ)(^ XCOMP-PRED)>'
+	      "@(CAT (^ XCOMP) {AP PP})"
+	      (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	      (^ XCOMP-PRED ASPECT) = stative
+	      @V3PP
+	      @VIMPERF
+	      @ACT
+	      @COP
+	      @IND;
+	  I * @V3PP
+	      @VIMPERF
+	      @IND
+	      @PROG.
+
+estás 	  V * (^ PRED)='estar<(^ SUBJ)(^ XCOMP-PRED)>'
+	      "@(CAT (^ XCOMP) {AP PP})"
+	      (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	      (^ XCOMP-PRED ASPECT) = stative
+	      @V2PS
+	      @VPRES
+	      @ACT
+	      @COP
+	      @IND;
+	  I * @V2PS
+	      @VPRES
+	      @IND
+	      @PROG.
+
+está 	  V * (^ PRED)='estar<(^ SUBJ)(^ XCOMP-PRED)>'
+	      "@(CAT (^ XCOMP-PRED) {AP PP})" "this constraint seems to be unnecessary because XCOMP-PRED can only be realized as AP and PP"
+	      "@(IFF (^ XCOMP-PRED PARTICIPLE) (^ XCOMP-PRED PARTICIPLE) =c resultative)"
+	      "stative $ (^ XCOMP-PRED ASPECT)"
+	      (^ XCOMP-PRED ASPECT) = stative
+	      (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	      @V3PS
+	      @VPRES
+	      @COP
+	      @ACT
+	      @IND;
+	  I * @V3PS
+	      @VPRES
+	      @IND
+	      @PROG.
+
+estamos   V * (^ PRED)='estar<(^ SUBJ)(^ XCOMP-PRED)>'
+	      "@(CAT (^ XCOMP) {AP PP})"
+	      (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	      (^ XCOMP-PRED ASPECT) = stative
+	      @V1PP
+	      @VPRES
+	      @ACT
+	      @COP
+	      @IND;
+	  I * @V1PP
+	      @VPRES
+	      @IND
+	      @PROG.
+
+estais 	  V * (^ PRED)='estar<(^ SUBJ)(^ XCOMP-PRED)>'
+	      "@(CAT (^ XCOMP) {AP PP})"
+	      (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	      (^ XCOMP-PRED ASPECT) = stative
+	      @V2PP
+	      @VPRES
+	      @ACT 
+	      @COP
+	      @IND;
+	  I * @V2PP
+	      @VPRES
+	      @IND
+	      @PROG.
+
+estão 	  V * (^ PRED)='estar<(^ SUBJ)(^ XCOMP-PRED)>'
+	      "@(CAT (^ XCOMP) {AP PP})"
+	      (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	      (^ XCOMP-PRED ASPECT) = stative
+	      @V3PP
+	      @VPRES
+	      @ACT 
+	      @COP
+	      @IND;
+	  I * @V3PP
+	      @VPRES
+	      @IND
+	      @PROG.
+
+
+espero 	  V * "{ (^ PRED)='esperar<(^ SUBJ)>'|(^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'}"
+	      @(OPT-TRNS esperar)
+	      @V1PS
+	      @VPRES
+	      @IND.
+
+esperas   V * { (^ PRED)='esperar<(^ SUBJ)>'|(^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'}
+	      @V2PS
+	      @VPRES
+	      @IND.
+
+espera 	  V * { (^ PRED)='esperar<(^ SUBJ)>'|(^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'}
+	      @V3PS
+	      @VPRES
+	      @IND.
+
+esperamos V * { (^ PRED)='esperar<(^ SUBJ)>'|(^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'}
+	      @V1PP
+	      @VPRES
+	      @IND.
+
+
+esperais  V * { (^ PRED)='esperar<(^ SUBJ)>'|(^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'}
+	      @V2PP
+	      @VPRES
+	      @IND.
+
+esperam   V * { (^ PRED)='esperar<(^ SUBJ)>'|(^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'}
+	      @V3PP
+	      @VPRES
+	      @IND.
+
+espere 	  V * { (^ PRED)='esperar<(^ SUBJ)>'|(^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'}
+	      { @V3PS | @V1PS} 
+	      @VPRES
+	      (^ MOOD)=subjunctive.
+
+esperar  V * (^ PRED)='esperar<(^ SUBJ)(^ OBJ)>'
+	      @INF. "TODO: check if this is ParGram compliant"
+
+esperado  V * @(OPT-TRNS esperar)
+	      @PSTPT;
+	  A * @(PART esperado)
+	      (^ SUBJ NUM)=sg
+	      (^ SUBJ GEND)=masc.
+
+esperada  "V * @(OPT-TRNS esperar)
+	       (^ TNS-ASP PERF)= +_;"
+	       A * @(PART esperado)
+	       @(A-AGR fem sg). 
+
+esperando V * @(OPT-TRNS esperar)
+	      @GERUND.
+
+rejeita V * (^ PRED)='rejeitar<(^ SUBJ)(^ OBJ)>'
+	       @V3PS
+	       @VPRES
+	       @IND.
+
+rejeitamos V * (^ PRED)='rejeitar<(^ SUBJ)(^ OBJ)>'
+	       @V1PP
+	       @VPRES
+	       @IND.
+
+rejeitar  V * (^ PRED)='rejeitar<(^ SUBJ)(^ OBJ)>'
+	      @INF.
+
+
+rejeitado V * (^ PRED)='rejeitar<(^ SUBJ)(^ OBJ)>'
+	       (^ TNS-ASP PERF)= +_. "(^ TNS-ASP PERF)=c +"
+
+fugido 	  V * @(NTRNS fugir)
+	      @PSTPT.
+
+rejeitando V * (^ PRED)='rejeitar<(^ SUBJ)(^ OBJ)>'
+	       (^ TNS-ASP PROG)= +_. "(^ TNS-ASP PROG)= +"
+
+
+quer 	  V * { (^ PRED)='querer<(^ SUBJ)(^ XCOMP)>'
+		(^ XCOMP SUBJ)=(^ SUBJ) 
+		~ (^ XCOMP COMP-FORM)
+	       |
+		(^ PRED)='querer<(^ SUBJ)(^ COMP)>'
+		(^ COMP MOOD)=c subjunctive
+		"(^ COMP COMP-FORM)=c que"
+		(^ COMP CLAUSE-TYPE)=c decl}
+	      @V3PS
+	      @VPRES
+	      @ACT
+	      @MAIN
+	      @IND.
+
+
+vê 	  V * (^ PRED)='ver<(^ SUBJ)(^ OBJ)(^ XCOMP)>'
+	      (^ XCOMP SUBJ)=(^ OBJ)
+	      @V3PS
+	      @VPRES
+	      @IND
+	      "@NOM" "@ACC".
+
+começa  V * (^ PRED)='começar<(^ XCOMP)>(^ SUBJ)'
+	      (^ XCOMP SUBJ)=(^ SUBJ)
+	      (^ XCOMP COMP-FORM)=c a
+	      @V3PS
+	      @VPRES
+	      @IND.
+
+persuadiu V * @(TRNS-XCOMP persuadir)
+	      (^ XCOMP COMP-FORM)=c a 
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND.
+
+convenceu V * @(TRNS-XCOMP convencer)
+	      (^ XCOMP COMP-FORM)=c a 
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND.
+
+impediu   V * @(TRNS-XCOMP impedir)
+	      (^ XCOMP COMP-FORM)=c de 
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND
+	      @(GL hinder).
+
+prometeu  V * @(NTRNS-XCOMP prometer)
+	      ~ (^ XCOMP COMP-FORM)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND.
+
+fez  V * (^ PRED)='fazer<(^ SUBJ)(^ XCOMP)>(^ OBJ)'
+	      (^ XCOMP SUBJ)=(^ OBJ)
+	      ~ (^ XCOMP COMP-FORM)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND.
+
+deixou  V * (^ PRED)='fazer<(^ SUBJ)(^ XCOMP)>(^ OBJ)'
+	      (^ XCOMP SUBJ)=(^ OBJ)
+	      ~ (^ XCOMP COMP-FORM)
+	      @V3PS
+	      @VPERF
+	      @ACT
+	      @MAIN
+	      @IND.
+
+cessa  V * (^ PRED)='cessar<(^ XCOMP)>(^ SUBJ)'
+              (^ XCOMP SUBJ)=(^ SUBJ)
+              (^ XCOMP COMP-FORM)=c de
+              @V3PS
+	      @VPRES
+	      @IND.
+
+para 	  V * (^ PRED)='parar<(^ SUBJ)(^ XCOMP)>(^ SUBJ)'
+	      (^ XCOMP SUBJ)=(^ SUBJ)
+	      (^ XCOMP COMP-FORM)=c de
+	      @V3PS
+	      @VPRES
+	      @IND;
+	  P * { @(SEM-PREP %stem {ben dir}) | @(NOSEM-PREP %stem)}.
+
+casei   V * (^ PRED)='casar<(^ SUBJ)(^ OBJ)>'
+	      @V1PS
+	      @VPAST
+	      @IND.
+
+casaste   V * (^ PRED)='casar<(^ SUBJ)(^ OBJ)>'
+	      @V2PS
+	      @VPAST
+	      @IND.
+
+casou   V * (^ PRED)='casar<(^ SUBJ)(^ OBJ)>'
+	      @V3PS
+	      @VPAST
+	      @IND.
+
+casamos   V * (^ PRED)='casar<(^ SUBJ)(^ OBJ)>'
+	      @V1PP
+	      @VPAST
+	      @IND.
+
+casastes   V * (^ PRED)='casar<(^ SUBJ)(^ OBJ)>'
+	      @V2PP
+	      @VPAST
+	      @IND.
+
+casaram   V * (^ PRED)='casar<(^ SUBJ)(^ OBJ)>'
+	      @V3PP
+	      @VPAST
+	      @IND.
+
+"lemma entries"
+mangar 	  V XLE @(OBLIQ %stem)
+		(^ OBL PFORM)=c de.
+
+elogiar   V XLE @(TRNS %stem); A XLE @(PART %stem) @(GL praise).
+
+cortar 	  V XLE @(TRNS %stem); A XLE @(PART %stem) @(GL cut).
+
+
+"auxiliary verbs (inflection heads)"
+
+tenho 	  I * @V1PS
+	      @VPRES
+	      @IND
+	      @PERF.
+
+tens 	  I * @V2PS
+	      @VPRES
+	      @IND
+	      @PERF.
+
+"tem 	  I * @V3PS
+	      @VPRES
+	      @IND
+	      @PERF."
+
+temos 	  I * @V1PP
+	      @VPRES
+	      @IND
+	      @PERF.
+
+tendes 	  I * @V2PP
+	      @VPRES
+	      @IND
+	      @PERF.
+
+têm 	  I * @V3PP
+	      @VPRES
+	      @IND
+	      @PERF. "progressive?"
+
+tinha 	  I * { @V1PS | @V3PS}
+	      @VPLPERF
+	      @IND
+	      @PERF.
+
+tinhas 	  I * @V2PS
+	      @VPLPERF
+	      @IND
+	      @PERF.
+
+tínhamos  I * @V1PP
+	      @VPLPERF
+	      @IND
+	      @PERF.
+
+tínheis   I * @V2PP
+	      @VPLPERF
+	      @IND
+	      @PERF.
+
+tinham 	  I * @V3PP
+	      @VPLPERF
+	      @IND
+	      @PERF.
+
+
+----
