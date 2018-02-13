@@ -1,0 +1,247 @@
+PARGRAM PORTUGUESE TEMPLATES (1.0)
+
+"glosses"
+   GL(T) = (^ GLOSS TRANS)=T.
+
+"case"
+
+NOM = (^ SUBJ CASE)=nom.
+ACC = (^ OBJ CASE)=acc.
+"case of objects of semantic prepositions"
+OBL = (^ OBJ CASE)=obl. "TODO: OBL?"
+
+"subcategorization"
+"semantic prepositions"
+   SEM-PREP(P S) = (^ PRED)='P<(^ SUBJ)(^ OBJ)>'
+	  @OBL
+	  (^ PTYPE)=sem
+	  (^ PSEM)=S.
+	  
+"non-semantic prepositions"
+   NOSEM-PREP(P) = (^ PFORM)=%stem
+	  (^ PTYPE)=nosem
+	  (^ CASE)=obl.
+
+"verbs and adjectives"
+"general templates"
+
+"transitives"
+   TRNS(P) = (^ PRED)='P<(^ SUBJ)(^ OBJ)>'.
+
+"transitives with an oblique"
+
+TRNS-OBL(P) = (^ PRED)='P<(^ SUBJ)(^ OBJ)(^ OBL)>'.
+
+"pseudo-transitives (non-passivisable)"
+   PSEUDO-TRNS(P) = @(TRNS P).
+
+"intransitives subcategorizing an oblique"
+   OBLIQ(P) = (^ PRED)='P<(^ SUBJ)(^ OBL)>'.
+
+"intransitives"
+   NTRNS(P) = (^ PRED)='P<(^ SUBJ)>'.
+
+"optional transitives"
+   OPT-TRNS(P) = { @(TRNS P) | @(NTRNS P)}.
+
+"causative-inchoative alternating verbs"
+   CAUS-INCHO(P) = { @(TRNS P) | @(NTRNS P)}.
+
+"ditransitives"
+   DTRNS(P) = { (^ PRED)='P<(^ SUBJ)(^ OBJ)(^ OBJ-TH)>' 
+	    { (^ OBJ-TH CASE) =c dat | (^ OBJ-TH PFORM) =c a}
+	   |
+	    (^ PRED)='P<(^ SUBJ)(^ OBJ)(^ OBL)>'
+	    (^ OBL PFORM) =c para "TODO: implement this as benefactive with semantic preposition"
+	  }.
+
+"optional ditransitives"
+   OPT-DTRNS(P) = { @(TRNS P) | @(DTRNS P)}.
+
+"transitives subcategorizing an open predicative complement, i.e. object control verbs"
+   TRNS-XCOMP(P) = (^ PRED)='P<(^ SUBJ)(^ OBJ)(^ XCOMP)>' "TODO: consider renaming this class O-CTRL-V"
+	  (^ XCOMP SUBJ)=(^ OBJ).
+
+"pseudo-transitives subcategorizing an open predicative complement"
+   PSEUDO-TRNS-XCOMP(P) = @(TRNS-XCOMP P). "TODO: ad constraints distinguishing this class from true, i.e. passivisable transitives"
+
+"intransitives subcategorizing an open predicative complement,i.e. subject control verbs"
+   NTRNS-XCOMP(P) = (^ PRED)='P<(^ SUBJ)(^ XCOMP)>' "TODO: consider renaming this class S-CTRL-V"
+	  (^ XCOMP SUBJ)=(^ SUBJ).
+
+  
+
+"specific templates for some verbs"
+   VERB-SER = { (^ PRED)='ser<(^ XCOMP-PRED)>(^ SUBJ)'
+	    (^ XCOMP-PRED SUBJ)=(^ SUBJ)
+	    (^ XCOMP-PRED ATYPE)=predicative
+	   |
+	    (^ PRED)='ser<(^ PREDLINK)>(^ SUBJ)'
+	    { (^ PREDLINK CASE)=nom 
+	      @(CAT (^ PREDLINK) DP)
+	     |
+	      @(CAT (^ PREDLINK) AdvP)
+	    }
+	  }.
+	  
+
+   VERB-TER = {@(PSEUDO-TRNS-XCOMP ter)|@(PSEUDO-TRNS ter)}.
+
+
+"templates for adjective subcategorization"
+	  
+   A-SUBJ(P) = (^ PRED)='P<(^ SUBJ)>'.
+
+   A-SUBJ-COMPAR(P) = { @(A-SUBJ P)
+	   |(^ PRED)='P<(^ SUBJ)(^ OBL-COMPAR)>'
+	    (^ DEGREE)=comparative
+	  }.
+
+   A-SUBJ-OBL(P F) = { @(A-SUBJ P)
+	   |(^ PRED)='P<(^ SUBJ)(^ OBL)>'
+	    (^ OBL PFORM)=c F
+	  }.
+
+
+   A-SUBJ-OBL-COMPAR(P F) = { @(A-SUBJ-OBL P F)
+	   |(^ PRED)='P<(^ SUBJ)(^ OBL-COMPAR)>' 
+	    (^ DEGREE)=comparative
+	   |(^ PRED)='P<(^ SUBJ)(^ OBL)(^ OBL-COMPAR)>'
+	    (^ DEGREE)=comparative
+	    (^ PFORM)=F "TODO:  (^ OBL PFORM)=c F ?"
+	  }.
+
+
+"tense, mood, aspect, verb type, and voice"
+
+"tense-aspect feature requirements of I"
+   PERF = (^ TNS-ASP PERF)=c +_.
+   PROG = (^ TNS-ASP PROG)=c +_.
+
+"non finite forms"
+"gerund and infinitive"
+
+   GERUND = (^ TNS-ASP PROG)= +_.
+   INF = (^ VFORM)=infinitive.
+"past participle"
+  PSTPT = (^ TNS-ASP PERF)= +_
+	  "(^ PARTICIPLE) = past".
+
+"passive participle"
+   PASS-PTCP = (^ PARTICIPLE) = passive. "deprecated?"
+
+"features of both V and I"
+   VPRES = (^ TNS-ASP TENSE)=pres.
+   VPAST = (^ TNS-ASP TENSE)= past. "deprecated 5/14/17"
+   VPERF = (^ TNS-ASP TENSE)= perf
+	  "(^ TNS-ASP ASPECT)= perf"
+	  "(^ TNS-ASP PERF) = +_".
+   VPLPERF = (^ TNS-ASP TENSE)= plperf.
+   VIMPERF = (^ TNS-ASP TENSE)= imperf
+	  "(^ TNS-ASP ASPECT)= imperf"
+	  "(^ TNS-ASP PERF) = -_".
+   IND = (^ TNS-ASP MOOD)=indicative.
+   IMP = (^ TNS-ASP MOOD)=imperative.
+   SUB = (^ TNS-ASP MOOD)=subjunctive.
+   PAST = (^ TNS-ASP PAST) = +_. "is this necessary for plusquamperfect? maybe depracted"
+
+
+"voice"
+   PASS = (^ PASSIVE) = +.
+   ACT = (^ PASSIVE) = -.
+
+"verb type"
+   MAIN = (^ VTYPE) = main.
+   COP = (^ VTYPE) = copular.
+
+   "subject agreement features of verbs"
+   "general template"
+   SUBJ-AGR(N P) =(^ SUBJ NUM)=N
+	  (^ SUBJ PERS)=P.
+
+   V1PS =@(SUBJ-AGR sg 1).
+	 
+   V2PS = @(SUBJ-AGR sg 2).
+	  
+   V3PS =  @(SUBJ-AGR sg 3).
+
+   V1PP = @(SUBJ-AGR pl 1).
+	  
+   V2PP = @(SUBJ-AGR pl 2).
+
+   V3PP = @(SUBJ-AGR pl 3).
+
+	  "gender and number agreement features of nouns"
+   N-AGR(G N) = (^ GEND)=G
+	  (^ NUM)=N.
+	  
+	  "number and person agreement features of pronouns"
+   AGR(N P) = (^ NUM)=N
+	  (^ PERS)=P.
+
+"gender and number agreement features of adjectives"
+
+   A-AGR(G N) = (^ SUBJ GEND)=G
+	  (^ SUBJ NUM)=N.
+
+
+"nouns"
+
+   HUM = (^ HUMAN) = +.
+   N-HUM = (^ HUMAN) = -.
+   PRED(P) = (^ PRED) = 'P'.
+   COMMON(P) = @(PRED P)
+	  (^ NTYPE NSYN) = common
+	  (^ NTYPE NSEM COMMON) = count.
+
+   PROPER(P T) = @(PRED P)
+	  (^ NTYPE NSYN) = proper
+	  (^ NTYPE NSEM PROPER PROPER-TYPE) = T.
+
+   MASS(P) = @(PRED P)
+	  (^ NTYPE NSYN) = common
+	  (^ NTYPE NSEM COMMON) = mass.
+
+
+"passive participle adjectives"
+"participle adjectives from a transitive verb"
+   PART(P) = { (^ PRED)='P<(^ OBL-AG)(^ SUBJ)>' 
+	    (^ OBL-AG PFORM)=c por
+	    (^ ASPECT) = processual |
+	    (^ PRED)='P<NULL (^ SUBJ)>' @(DEFAULT (^ ASPECT) processual)}. "TODO: include processual as default"
+
+   PART-OBL(P) = { (^ PRED)='P<(^ OBL-AG)(^ SUBJ)(^ OBL)>' 
+	    (^ OBL-AG PFORM)=c por
+	    (^ OBL PFORM)=c de
+	    (^ ASPECT) = processual |
+	    (^ PRED)='P<NULL (^ SUBJ)(^ OBL)>' 
+	    (^ OBL PFORM)=c de
+	    @(DEFAULT (^ ASPECT) processual)}.
+
+   PART-POSS(P) = {(^ PRED)='P<NULL (^ OBJ)(^ SUBJ)>' |
+	    (^ PRED)='P<(^ OBL-AG)(^ OBJ)(^ SUBJ)>' (^ OBL-AG PFORM)=c por} 
+	  (^ ASPECT) = processual.
+
+
+   PART-2(P) = { @(PART P) | @(PART-POSS P) }.
+
+
+"participle adjectives from a ditransitive verb"
+   DTRNS-PART(P) = { (^ PRED)='P<(^ OBL-AG)(^ SUBJ)(^ OBJ-TH)>' 
+	    (^ OBL-AG PFORM)=c por |
+	    (^ PRED)='P<NULL (^ SUBJ)(^ OBJ-TH)>'}
+	  { (^ OBJ-TH CASE)=c dat | (^ OBJ-TH PFORM)=c a}
+	  "@PASS". 
+
+	  "general templates"
+   IF(P Q) = { ~P | Q}. "Crouch et al. 2011"
+   IFF(P Q) = @(IF P Q) @(IF Q P). "Crouch et al. 2011"
+
+   DEFAULT(D V) = "V is the default value for the designator D"
+	  { D
+	    D~=V
+	   |D=V }. "Crouch et al. 2011"
+
+
+
+----

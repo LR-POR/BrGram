@@ -1,0 +1,47 @@
+PARGRAM PORTUGUESE TEMPLATES (1.0)
+
+"tense, mood, aspect, verb type, and voice"
+
+"general templates"
+   TNS(T) = (^ TNS-ASP TENSE) = T.
+
+"mood"
+   IND = (^ TNS-ASP MOOD)=indicative.
+   IMP = (^ TNS-ASP MOOD)=imperative.
+   SUB = (^ TNS-ASP MOOD)=subjunctive.
+
+"voice"
+   PASS = (^ PASSIVE) = +.
+   ACT = (^ PASSIVE) = -.
+
+
+"tense-aspect feature requirements of I"
+   PERF = (^ TNS-ASP PERF)=c +_.
+   PROG = (^ TNS-ASP PROG)=c +_.
+
+"non finite forms"
+"gerund and infinitive"
+   GERUND = (^ TNS-ASP PROG)= +_.
+   INF = (^ VFORM)=infinitive.
+"past participle"
+   PTPST = (^ TNS-ASP PERF)= +_ 
+	  @ACT.
+"passive participle"
+   PTPASS = @PASS.
+
+"features of both V and I"
+   VPRES = @(TNS pres) @IND. "include @ACT?" 
+   VPERF = @(TNS perf) @IND.
+   VPLPERF = @(TNS plperf) @IND.
+   VIMPERF = @(TNS imperf) @IND.
+   VFUT = @(TNS fut) @IND.
+   VCOND = @(TNS cond) @IND.
+   VSBJF = @(TNS fut) @SUB.
+   VSBJP = @(TNS imperf) @SUB.
+   VSBJR = @(TNS pres) @SUB.
+
+"verb type"
+   MAIN = (^ VTYPE) = main.
+   COP = (^ VTYPE) = copular.
+
+----
