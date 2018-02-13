@@ -1,4 +1,3 @@
-# brgram
 BrGram - a lexical-functional grammar fragment of Brazilian Portuguese https://github.com/LFG-PTBR/BrGram
 
 Author: Leonel F. de Alencar leonel.de.alencar@ufc.br
@@ -21,6 +20,15 @@ https://github.com/LFG-PTBR/BrGram/fst
 
 The finite-state transducers must be compiled with XFST in the operating system where you are running XLE. Edit the respective path in the morphology.lfg file to point to the location of each transducer file in your system.
 
+Once you have XLE installed and the transducers compiled, you can compile a parser from the grammar and apply it on individual sentences from the testfile.lfg in the test folder by executing the following commands on the XLE shell (I assume your working directory is the grammar folder):
+
+create-parser config.lfg
+parse-testfile test/testfile.lfg 1
+
+where 1 refers to first sentence in the testfile.
+
+For more details on the XLE textual and graphical user interfaces, see the documentation: http://www2.parc.com/isl/groups/nltt/xle/doc/xle.html#SEC2
+
 BrGramm is a significantly improved version of the grammar fragment described in the following papers:
 
 Alencar, Leonel F. de. BrGram: uma gramática computacional de um fragmento do português brasileiro no formalismo da LFG. In: BRAZILIAN SYMPOSIUM IN INFORMATION AND HUMAN LANGUAGE TECHNOLOGY – STIL, 2013, Fortaleza. BRAZILIAN SYMPOSIUM IN INFORMATION AND HUMAN LANGUAGE TECHNOLOGY – STIL. Fortaleza: Sociedade Brasileira de Computação, 2013. p.183 - 188. http://www.aclweb.org/anthology/W13-4823
@@ -40,6 +48,3 @@ For more information on this book, visit
 http://lfg-book.blogspot.com.br/2016/01/new-lfg-books-abstract.html http://linguistlist.org/issues/27/27-761.html
 
 For bug reports, comments, and suggestions, please write to: leonel.de.alencar@ufc.br
-
-============
-===========
