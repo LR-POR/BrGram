@@ -1,0 +1,42 @@
+PARGRAM   PORTUGUESE   CONFIG (1.0)
+  ROOTCAT S. 
+  FILES  templates/templates.lfg
+  	 lexicon/adjectives.lfg
+	 lexicon/adverbs.lfg
+	 lexicon/determiners.lfg
+	 lexicon/nouns.lfg
+	 lexicon/prepositions.lfg
+	 lexicon/verbs.lfg
+	 lexicon/clitics.lfg
+	 lexicon/complementizers.lfg
+	 lexicon/punctuation.lfg
+	 lexicon/tags.lfg
+	rules/advp-cat.lfg
+        rules/ap-cat.lfg
+        rules/cp-cat.lfg
+        rules/dp-cat.lfg
+        rules/ip-cat.lfg
+        rules/metacategories.lfg
+        rules/negp-cat.lfg
+        rules/np-cat.lfg
+        rules/nump-cat.lfg
+        rules/possp-cat.lfg
+        rules/pp-cat.lfg
+        rules/qp-cat.lfg
+        rules/s-cat.lfg
+        rules/sublexical.lfg
+        rules/vp-cat.lfg
+	morphology.lfg .
+  LEXENTRIES   (PARGRAM PORTUGUESE).
+  RULES   (PARGRAM PORTUGUESE).
+MORPHOLOGY (PARGRAM PORTUGUESE).
+  TEMPLATES (PARGRAM PORTUGUESE).
+  GOVERNABLERELATIONS    SUBJ OBJ OBJ-TH OBL OBL-AG OBL-COMPAR XCOMP XCOMP-PRED COMP PREDLINK.
+  SEMANTICFUNCTIONS    ADJUNCT MOD TOPIC FOCUS.
+  NONDISTRIBUTIVES    NUM PERS CONJ-FORM.
+  EPSILON   e.
+OPTIMALITYORDER NOGOOD.
+CHARACTERENCODING utf-8.
+
+
+----

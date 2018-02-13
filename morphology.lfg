@@ -1,0 +1,17 @@
+"loads up the FST tokenizer and morphology"
+
+"P!basic-parse-tok.fst G!default-gen-tokenizer.fst"
+PARGRAM PORTUGUESE MORPHOLOGY (1.0)
+
+TOKENIZE:
+P!fst/tokenizer.fst G!default-gen-tokenizer.fst
+
+
+ANALYZE:
+fst/brlex02.fst
+
+
+BuildMultiwordsFromLexicon:
+
+
+----
