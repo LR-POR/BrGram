@@ -1,0 +1,11 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+S --> { 
+	   IP: ^=! {(^ TNS-ASP MOOD)=c indicative | (^ TNS-ASP MOOD)=c imperative} 
+	  |
+	   CP: ^=! (^ TNS-ASP MOOD)=c indicative
+	 }
+ 	 PUNCT.
+
+
+----

@@ -1,0 +1,10 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+   DP --> { "(QP) D: ^=! (^ PRED)='pro'" "to account for DPs without a NP or DP complement"
+	    "|" (QP) Dbar
+ 	  | QP: ^=! (^ PRED)='pro' | D: ^=! (! PRON-TYPE)=c free (^ PRED)='pro'; VP: ! $ (^ ADJUNCT) (! SUBJ )= ^ }.
+
+   Dbar --> { (D) {NumP | NP | PossP} | D: ^=! "@(IFF (^ PRON-TYPE)=c pers" (^ PRED)='pro'")"}. "TODO: only personal pronouns as D heads provide PRED feature to DP when used without complements"
+
+
+   ----

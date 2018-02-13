@@ -1,0 +1,18 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+    N --> N_BASE "stem form"
+ 	 N_SFX_BASE+ "as many tags as the morphology provides".
+
+   A --> A_BASE 
+ 	 A_SFX_BASE+.
+
+   V --> V_BASE 
+ 	 V_SFX_BASE+.
+
+"V --> Ptcp." "TODO: test integrating this option in the rule above."
+
+   Ptcp --> Ptcp_BASE
+ 	  A_SFX_BASE+.
+
+
+   ----

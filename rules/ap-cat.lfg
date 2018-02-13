@@ -1,0 +1,18 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+   AP --> { AdvP: ! $ (^ ADJUNCT) (! ADV-TYPE)=degree (^ DEGREE)=(! DEGREE) (^ DEG-DIM)=(! DEG-DIM) | e: (^ DEGREE)=positive (^ DEG-DIM)=pos} Abar. "include {manner intensity}?"
+
+   Abar --> A { PP: (^ OBL-AG)=! 
+ 	    | PP: (^ OBJ-TH)=! 
+	    | PP: (^ OBL-AG)=! ; PP: (^ OBJ-TH)=! 
+	    | PP: (^ OBJ-TH)=! ; PP: (^ OBL-AG)=! 
+	    | PP: (^ OBL)=! 
+	    | PP: (^ OBL-COMPAR)=! (! PFORM)=c que}#0#1.
+
+"AP --> A [
+ 	  PP: (^ OBL)=!;
+ 	  PP: (^ OBJ-TH)=!
+	      ]*."
+
+
+   ----

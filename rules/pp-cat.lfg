@@ -1,0 +1,17 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+   PP --> { { P: ^=! (! PFORM)"existential constraint: preposition must have PFORM feature";
+ 	      DP| 
+ 	      P: ^=! (! PRED)"existential constraint: preposition must have PRED feature"; 
+ 	      DP: (^ OBJ)=!}
+	   |
+ 	   "D: ^=! (! SPEC DET PRED FN)=c 'um'" UM Pbar}. "TODO: introduce category UM"
+   
+   Pbar --> { P: ^=! (! PFORM);
+ 	    DP: ^=! (! PRON-TYPE)=c recip| 
+ 	    P: ^=! (! PRED); 
+ 	    DP: (^ OBJ)=! (! PRON-TYPE)=c recip}.
+
+
+
+   ----

@@ -1,0 +1,36 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+   CP --> { C: ^=! (! CLAUSE-TYPE) (! MOOD); 
+ 	    IP 
+ 	  | 
+ 	    C: ^=! ~ (! CLAUSE-TYPE) (! VFORM)=c infinitive; 
+ 	    VP
+ 	   |
+ 	    DP: (^ SUBJ)=! (! CASE)=nom
+		(^ TOPIC) = (^ SUBJ)
+		(! PRON-TYPE)=c rel;
+ 	    VP: ^=! (^ CLAUSE-TYPE) = rel (! TNS-ASP TENSE)
+ 	   |
+ 	    DP: (^ OBJ)=!
+		(^ FOCUS)=!
+		(! PRON-TYPE)=c int;
+ 	    IP: ^=! (^ CLAUSE-TYPE) =int "Ela perguntou o que/quem ele viu."
+ 	   |
+ 	    DP: (^ OBJ)=!
+		(^ TOPIC) = (^ OBJ)
+		(! PRON-TYPE)=c rel;
+ 	    IP: ^=! (^ CLAUSE-TYPE) = rel
+ 	   |
+ 	    PP:! $ (^ ADJUNCT) (! SUBJ PRED)='pro'; "TODO: include ADV-ADJUNCT; besides, more than one PP-ADJUNCT is licensed"
+ 	    IP: ^=! (^ CLAUSE-TYPE) = decl
+ 	   |
+ 	    PP:! $ (^ ADJUNCT) (! SUBJ PRED)='pro' (! OBJ PRON-TYPE)=c rel; "TODO: include ADV-ADJUNCT; besides, more than one PP-ADJUNCT is licensed"
+ 	    IP: ^=! (^ CLAUSE-TYPE) = rel
+ 	   |
+ 	    DP: (^ SUBJ)=! (! CASE)=nom
+		(! PRON-TYPE)=c int;
+ 	    VP
+ 	  }.
+
+
+   ----

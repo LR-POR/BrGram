@@ -1,0 +1,10 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+   IP --> "{"(DP: (^ SUBJ)=! (! CASE)=nom ~ (! PRON-TYPE)=int) "| PP: { (^ XCOMP OBJ-TH)=! | (^ XCOMP OBL)=!}}"
+ 	  (NegP:! $ (^ ADJUNCT))
+ 	  { VP | Ibar}. 
+
+   Ibar --> I VP.
+
+
+   ----

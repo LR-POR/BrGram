@@ -1,0 +1,23 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+   VP --> ( CL: { (^ OBJ)=! | (^ OBJ-TH)=! } @(IFF (^ PRON-TYPE)=c refl [(^ SUBJ PERS)= (! PERS) (^ SUBJ NUM)= (! NUM) ]) ) "clitic reflexive objects in Portuguese"
+
+ 	  Vbar.
+
+   
+   Vbar --> V
+ 	  { [DIR-OBJ,IND-OBJ] |
+ 	    DIR-OBJ |
+ 	    IND-OBJ|
+ 	    PREDIC |
+ 	    XP: (^ XCOMP-PRED)=! |
+ 	    AP: (^ XCOMP)=! ; DIR-OBJ (PP: (^ XCOMP OBL-AG)=!) |
+ 	    DIR-OBJ AP: (^ XCOMP)=! |
+ 	    { DIR-OBJ | IND-OBJ }#0#1 CP: (^ XCOMP)=! | 
+ 	    [ DIR-OBJ, BARE-INF] |
+ 	    (IND-OBJ) BARE-INF |
+ 	    (IND-OBJ) CP: (^ COMP)=!
+ 	  }#0#1 / V-ADJUNCT.
+
+
+   ----

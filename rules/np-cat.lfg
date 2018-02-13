@@ -1,0 +1,9 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+  NP --> N-AP-ADJUNCT*
+ 	  N
+ 	  N-ADJUNCT*
+ 	  (CP: ! $ (^ ADJUNCT) (! ADJUNCT-TYPE)=relative (! CLAUSE-TYPE)=c rel "(! TOPIC)=(! OBJ)" "(^ PRED) = (! OBJ PRED)").
+
+
+   ----

@@ -1,0 +1,37 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+"meta-categories"
+
+   XP = { AP|PP }.
+
+   SUBJECT = DP: (^ SUBJ)=! (! CASE)=nom.
+
+   IND-OBJ = PP: { (^ OBL)=! | (^ OBJ-TH)=!}. "PP as indirect object"
+
+   DIR-OBJ = DP: (^ OBJ)=! (! CASE)=acc.
+
+   PREDIC = {DP: (^ PREDLINK)=!  | AdvP: (^ PREDLINK)=!}.
+
+   BARE-INF = Vbar: (^ XCOMP)= ! (! VFORM)=c infinitive.
+
+   ZP = { AdvP|PP}.
+
+   PP-ADJUNCT = PP:! $ (^ ADJUNCT) (! SUBJ PRED)='pro' "TODO: include other pronoun features".
+   ADV-ADJUNCT= AdvP:! $ (^ ADJUNCT).
+   V-ADJUNCT = { ADV-ADJUNCT| PP-ADJUNCT}.
+   N-AP-ADJUNCT= AP: ! $ (^ ADJUNCT)
+		     (^ ADJUNCT ATYPE)=attributive
+		     "(^ NUM) = (! SUBJ NUM)" "agreement between adjective and head noun"
+		     "(^ GEND) = (! SUBJ GEND)"
+		     "(^ PRED) = (! SUBJ PRED)." "satisfaction of adjective subject requirement"
+		     ^ = (! SUBJ).
+   N-PP-ADJUNCT = "("PP: ! $ (^ ADJUNCT)
+		       "(^ PRED) = (! SUBJ PRED)" ^ = (! SUBJ)")".
+   N-ADJUNCT = { N-AP-ADJUNCT| N-PP-ADJUNCT}. "TODO: N-MOD including complements of N, e.g. 'fear of'"
+
+   "the two metacategories below are not used"
+   VERB = { V | Ptcp: (^ PARTICIPLE) = past}.
+
+   ADJ = { A | Ptcp: (^ PARTICIPLE) = passive}.
+
+----

@@ -1,0 +1,7 @@
+PARGRAM   PORTUGUESE   RULES (1.0)
+
+   NumP --> { Num NP 
+ 	  | Num: ^=! (^ PRED)='pro'}. "number phrases"
+
+
+   ----
